@@ -14,7 +14,10 @@ body {
     width: 100%;
 
     /* HÄR KODAR DU UPP DIN GRID */
-
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: 60px;
+    align-items: 5rem;
 }
 
 .wrapper > * {
@@ -28,12 +31,15 @@ nav {
     height: 3rem;
 
     /* Här behövs grid-grejjer */
-    
+    grid-column: auto / 12;
+    grid-row: auto / 4;
 }
 
 header {
     height: 16rem;
-    
+    padding: .25rem;
+    flex-direction: column;
+    align-items: ;
     /* Här behövs grid-grejjer */
     
 }
@@ -63,11 +69,14 @@ main article {
 }
 
 aside {
-    
+    grid-column: auto / 4;
+    grid-row: auto / 6;
 }
 
 section.col-4 {
     height: 12rem;
+    grid-column: auto / span 4;
+    grid- row: auto / 3;
 
     /* Här behövs grid-grejjer */
 
@@ -75,6 +84,8 @@ section.col-4 {
 
 section.col-3 {
     height: 12rem;
+    grid-column: auto / span 3;
+    grid-row: auto / span ;
 
     /* Här behövs grid-grejjer */
 }

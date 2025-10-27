@@ -13,9 +13,14 @@ body {
 .wrapper {
     max-width: 1100px;
     width: 100%;
+    min-height: 100vh;
+    
 
     /* HÄR KODAR DU UPP DIN GRID */
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 1rem;
 }
 
 .wrapper > * {
@@ -26,27 +31,30 @@ body {
 }
 
 header {
-
+    grid-column: auto / span 3;
+    grid-row: auto / span 3;
     
 }
 
 nav {
-
+    grid-column: auto / span 3;
     
 }
 
 main {
-
+    grid-column: auto / span 2;
+    grid-row: auto / span 6;
     
 }
 
 aside {
-
+    grid-row: auto / span 6;
     
 }
 
 footer {
-
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
     
 }
 

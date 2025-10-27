@@ -30,6 +30,8 @@ body {
 .dice aside {
     background: #222;
     border-radius: 99rem;
+    width: 12px;
+    aspect-ratio: 2;
 }
 
 .dice aside:nth-child(1) { 
@@ -55,39 +57,57 @@ body {
 /* TIPS */
 /* 
 Utgå från nedanstående grid-template-areas. En punkt definerar en tom plats i den grid
-'. . . . .'
-'. . . . .'
-'. . . . .'
-'. . . . .'
-'. . . . .'
+
+'. . . '
+'. . . '
+'. . . '
 */
 
 .dice.dots-1 {
-
+    grid-template-areas:
+    '...'
+    '.one.'
+    '...'
+    ;
     
 }
 
 .dice.dots-2 {
-
+    grid-template-areas:
+    'one . . '
+    '. . . '
+    '. . two '
     
 }
 
 .dice.dots-3 {
-
+    grid-template-areas:
+    '. . one'
+    '. two . '
+    'three . . '
     
 }
 
 .dice.dots-4 {
-
+    grid-template-areas:
+    'one . two '
+    '. . . '
+    'three . four '
     
 }
 
 .dice.dots-5 {
-
+    grid-template-areas:
+    'one . two '
+    '. five . '
+    'three . four '
     
 }
 
 .dice.dots-6 {
-
+    grid-template-areas:
+    'one . two '
+    'three . four '
+    'five . six '
     
 }
