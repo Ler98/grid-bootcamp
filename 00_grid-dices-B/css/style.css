@@ -19,12 +19,13 @@ body {
     aspect-ratio: 1;
 
     /* HÄR KODAR DU UPP DIN GRID */
-
+    display:grid;
     
 }
 
 .dice.faded {
     opacity: .2;
+    
 }
 
 .dice aside {
@@ -32,14 +33,15 @@ body {
     border-radius: 99rem;
     width: 12px;
     aspect-ratio: 2;
+    height: 12px;
+    
 }
 
 .dice aside:nth-child(1) { 
-    grid-area: one;
+    grid-area: one; 
 }
 .dice aside:nth-child(2) {
     grid-area: two;
-    
 }
 .dice aside:nth-child(3) {
     grid-area: three;
@@ -52,6 +54,7 @@ body {
 }
 .dice aside:nth-child(6) {
     grid-area: six;
+    
 }
 
 /* TIPS */
@@ -77,7 +80,7 @@ Utgå från nedanstående grid-template-areas. En punkt definerar en tom plats i
     'one . . '
     '. . . '
     '. . two '
-    
+    ;
 }
 
 .dice.dots-3 {
@@ -85,7 +88,7 @@ Utgå från nedanstående grid-template-areas. En punkt definerar en tom plats i
     '. . one'
     '. two . '
     'three . . '
-    
+    ;
 }
 
 .dice.dots-4 {
@@ -93,7 +96,7 @@ Utgå från nedanstående grid-template-areas. En punkt definerar en tom plats i
     'one . two '
     '. . . '
     'three . four '
-    
+    ;
 }
 
 .dice.dots-5 {
@@ -101,13 +104,13 @@ Utgå från nedanstående grid-template-areas. En punkt definerar en tom plats i
     'one . two '
     '. five . '
     'three . four '
-    
+   ; 
 }
 
 .dice.dots-6 {
     grid-template-areas:
-    'one . two '
+    'one . two  '
     'three . four '
     'five . six '
-    
+    ;
 }

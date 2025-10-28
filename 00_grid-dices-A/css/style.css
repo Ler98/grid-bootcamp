@@ -29,13 +29,14 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 100px;
     height: 100px;
+    
 
 
 }
 
 .dice.faded {
     opacity: .2;
-
+    
 }
 
 .dice aside {

@@ -21,6 +21,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(12, 1fr);
     gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .wrapper > * {
@@ -28,6 +29,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: grid;
+    
 }
 
 header {
