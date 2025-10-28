@@ -31,7 +31,7 @@ nav {
     height: 3rem;
 
     /* Här behövs grid-grejjer */
-    grid-column: auto / 12;
+    grid-column: auto / span 12;
     grid-row: auto / 4;
 }
 
